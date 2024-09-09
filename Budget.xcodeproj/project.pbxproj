@@ -21,6 +21,7 @@
 		3B8F5E1E2C8E112B00EE3D4E /* SupabaseClient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F5E1D2C8E112B00EE3D4E /* SupabaseClient+Extensions.swift */; };
 		3B8F5E212C8E212D00EE3D4E /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F5E202C8E212D00EE3D4E /* Budget.swift */; };
 		3B8F5E242C8E42FC00EE3D4E /* AddBudgetScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F5E232C8E42FC00EE3D4E /* AddBudgetScreen.swift */; };
+		3B8F5E262C8E8A9400EE3D4E /* BudgetDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F5E252C8E8A9400EE3D4E /* BudgetDetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		3B8F5E1D2C8E112B00EE3D4E /* SupabaseClient+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SupabaseClient+Extensions.swift"; sourceTree = "<group>"; };
 		3B8F5E202C8E212D00EE3D4E /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		3B8F5E232C8E42FC00EE3D4E /* AddBudgetScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetScreen.swift; sourceTree = "<group>"; };
+		3B8F5E252C8E8A9400EE3D4E /* BudgetDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				3B8F5DFF2C8E07E900EE3D4E /* BudgetListScreen.swift */,
 				3B8F5E232C8E42FC00EE3D4E /* AddBudgetScreen.swift */,
+				3B8F5E252C8E8A9400EE3D4E /* BudgetDetailScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				3B8F5E1E2C8E112B00EE3D4E /* SupabaseClient+Extensions.swift in Sources */,
 				3B8F5E002C8E07E900EE3D4E /* BudgetListScreen.swift in Sources */,
 				3B8F5E212C8E212D00EE3D4E /* Budget.swift in Sources */,
+				3B8F5E262C8E8A9400EE3D4E /* BudgetDetailScreen.swift in Sources */,
 				3B8F5DFE2C8E07E900EE3D4E /* BudgetApp.swift in Sources */,
 				3B8F5E1B2C8E101500EE3D4E /* SupabaseEnvironmentKey.swift in Sources */,
 			);

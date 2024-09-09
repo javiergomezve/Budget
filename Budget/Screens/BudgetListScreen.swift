@@ -45,7 +45,11 @@ struct BudgetListScreen: View {
     var body: some View {
         List {
             ForEach(budgets) { budget in
-                BudgetCellView(budget: budget)
+                NavigationLink {
+                    BudgetDetailScreen(budget: budget)
+                } label: {
+                    BudgetCellView(budget: budget)
+                }
             }.onDelete(perform: { indexSet in
                 guard let index = indexSet.last else { return }
                 let budget = budgets[index]
