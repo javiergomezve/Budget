@@ -20,6 +20,7 @@
 		3B8F5E1B2C8E101500EE3D4E /* SupabaseEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F5E1A2C8E101500EE3D4E /* SupabaseEnvironmentKey.swift */; };
 		3B8F5E1E2C8E112B00EE3D4E /* SupabaseClient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F5E1D2C8E112B00EE3D4E /* SupabaseClient+Extensions.swift */; };
 		3B8F5E212C8E212D00EE3D4E /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F5E202C8E212D00EE3D4E /* Budget.swift */; };
+		3B8F5E242C8E42FC00EE3D4E /* AddBudgetScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F5E232C8E42FC00EE3D4E /* AddBudgetScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		3B8F5E1A2C8E101500EE3D4E /* SupabaseEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseEnvironmentKey.swift; sourceTree = "<group>"; };
 		3B8F5E1D2C8E112B00EE3D4E /* SupabaseClient+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SupabaseClient+Extensions.swift"; sourceTree = "<group>"; };
 		3B8F5E202C8E212D00EE3D4E /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		3B8F5E232C8E42FC00EE3D4E /* AddBudgetScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +72,11 @@
 		3B8F5DFC2C8E07E900EE3D4E /* Budget */ = {
 			isa = PBXGroup;
 			children = (
+				3B8F5E222C8E399900EE3D4E /* Screens */,
 				3B8F5E1F2C8E212000EE3D4E /* Models */,
 				3B8F5E1C2C8E111400EE3D4E /* Extensions */,
 				3B8F5E192C8E0FB900EE3D4E /* Environment Values */,
 				3B8F5DFD2C8E07E900EE3D4E /* BudgetApp.swift */,
-				3B8F5DFF2C8E07E900EE3D4E /* BudgetListScreen.swift */,
 				3B8F5E012C8E07EA00EE3D4E /* Assets.xcassets */,
 				3B8F5E032C8E07EA00EE3D4E /* Preview Content */,
 			);
@@ -118,6 +120,15 @@
 				3B8F5E202C8E212D00EE3D4E /* Budget.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3B8F5E222C8E399900EE3D4E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3B8F5DFF2C8E07E900EE3D4E /* BudgetListScreen.swift */,
+				3B8F5E232C8E42FC00EE3D4E /* AddBudgetScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8F5E242C8E42FC00EE3D4E /* AddBudgetScreen.swift in Sources */,
 				3B8F5E1E2C8E112B00EE3D4E /* SupabaseClient+Extensions.swift in Sources */,
 				3B8F5E002C8E07E900EE3D4E /* BudgetListScreen.swift in Sources */,
 				3B8F5E212C8E212D00EE3D4E /* Budget.swift in Sources */,

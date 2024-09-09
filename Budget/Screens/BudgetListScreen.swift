@@ -11,6 +11,9 @@ struct BudgetListScreen: View {
     @Environment(\.supabaseClient) private var supabaseClient
     
     @State private var budgets: [Budget] = []
+    @State private var isPresented: Bool = false
+    
+    
     
     private func fetchBudgets() async {
         do {
@@ -27,9 +30,22 @@ struct BudgetListScreen: View {
         List(budgets) { budget in
             BudgetCellView(budget: budget)
         }.task {
+            print(".task modifier")
             await fetchBudgets()
         }
         .navigationTitle("Budgets")
+        .toolbar(content: {
+            Button("Add new") {
+                isPresented = true
+            }
+        })
+        .sheet(isPresented: $isPresented, content: {
+            NavigationStack {
+                AddBudgetScreen(onSave: {budget in
+                    budgets.append(budget)
+                })
+            }
+        })
     }
 }
 
