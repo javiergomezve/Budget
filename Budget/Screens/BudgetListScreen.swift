@@ -25,10 +25,35 @@ struct BudgetListScreen: View {
             print(error)
         }
     }
+    
+    private func deleteBudget(_ budget: Budget) async {
+        guard let id = budget.id else { return }
+        
+        do {
+            try await supabaseClient.from("budgets")
+                .delete()
+                .eq("id", value: id)
+                .execute()
+            
+            budgets = budgets.filter { $0.id! != id }
+        } catch {
+            print(error)
+        }
+        
+    }
 
     var body: some View {
-        List(budgets) { budget in
-            BudgetCellView(budget: budget)
+        List {
+            ForEach(budgets) { budget in
+                BudgetCellView(budget: budget)
+            }.onDelete(perform: { indexSet in
+                guard let index = indexSet.last else { return }
+                let budget = budgets[index]
+                
+                Task {
+                    await deleteBudget(budget)
+                }
+            })
         }.task {
             print(".task modifier")
             await fetchBudgets()
